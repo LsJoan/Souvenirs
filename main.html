@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Souvenirs & Gift Shop</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .sticker-section {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin: 10px 0;
+        }
+        .sticker {
+            width: 80px;
+            height: auto;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 flex flex-col items-center justify-center min-h-screen relative">
+    
+    <!-- Sección superior con stickers -->
+    <div class="sticker-section">
+        <img src="/mnt/data/0FCCB7DB-BBBE-4D3E-87D6-8455C46B7280.png" class="sticker" alt="Sticker 1">
+        <img src="/mnt/data/A3A4C63B-29A5-45A2-B684-35E513B5DE3C.png" class="sticker" alt="Sticker 2">
+        <img src="/mnt/data/B8E9792B-920E-4510-8538-38061F8C1968.png" class="sticker" alt="Sticker 3">
+        <img src="/mnt/data/4F0C39CA-A773-40DC-970C-CA9B11BE1F9D.png" class="sticker" alt="Sticker 4">
+    </div>
+    
+    <header class="text-center my-6">
+        <h1 class="text-4xl font-bold text-gray-800">Souvenirs & Gift Shop</h1>
+        <h2 class="text-xl text-gray-600">Shopping tour - World Mart</h2>
+    </header>
+
+    <div id="carouselExample" class="carousel slide w-full max-w-2xl" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="https://media-cdn.tripadvisor.com/media/attractions-splice-spp-720x480/11/cc/de/89.jpg" class="d-block w-100 rounded-lg" alt="Shop Image 1">
+            </div>
+            <div class="carousel-item">
+                <img src="https://thumbs.dreamstime.com/b/recuerdos-locales-en-punta-cana-rep%C3%BAblica-dominicana-38424946.jpg" class="d-block w-100 rounded-lg" alt="Shop Image 2">
+            </div>
+            <div class="carousel-item">
+                <img src="https://cdn.getyourguide.com/img/tour/cc0a4e2f3008f192aa746b95e002d2fdf3f28f89d6b41ea878fe0a9721436469.jpg/61.jpg" class="d-block w-100 rounded-lg" alt="Shop Image 3">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    
+    <!-- Sección inferior con stickers -->
+    <div class="sticker-section">
+        <img src="/mnt/data/0FCCB7DB-BBBE-4D3E-87D6-8455C46B7280.png" class="sticker" alt="Sticker 1">
+        <img src="/mnt/data/A3A4C63B-29A5-45A2-B684-35E513B5DE3C.png" class="sticker" alt="Sticker 2">
+        <img src="/mnt/data/B8E9792B-920E-4510-8538-38061F8C1968.png" class="sticker" alt="Sticker 3">
+        <img src="/mnt/data/4F0C39CA-A773-40DC-970C-CA9B11BE1F9D.png" class="sticker" alt="Sticker 4">
+    </div>
+    
+    <footer class="w-full text-center mt-8 p-4 bg-gray-800 text-white relative z-10">
+        <p class="text-lg font-semibold">Free Transportation</p>
+        <a href="https://wa.me/18092056364" class="flex items-center justify-center mt-2 text-lg font-bold text-white bg-[#25D366] px-4 py-2 rounded-lg shadow-lg">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" class="w-6 h-6 mr-2"> BOOK +1 809 205 6364
+        </a>
+    </footer>
+</body>
+</html>
