@@ -1,172 +1,48 @@
-<html lang="es">
+<!DOCTYPE html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Souvenirs & Gift Shop</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
-  
-  <style>
-  /* Estilos generales */
-body {
-    font-family: "Satisfy", cursive;
-    margin: 0;
-    padding: 0;
-}
-
-/* Estilo del título principal */
-header{
-  padding:12px;
-  text-align:center;
-  background-color:#000111;
-  color:#fffccc;
-}
-header h1 {
-    font-size: 2rem;  /* Reducir el tamaño */
-    font-weight: bold;
-    margin: 0;  /* Eliminar margen */
-    padding: 10px 0;  /* Ajustar el padding */
-}
-
-/* Estilo del subtítulo */
-header h2 {
-    font-size: 1.2rem;  /* Reducir el tamaño */
-    font-weight: 300;
-    margin: 0;  /* Eliminar margen */
-    padding: 5px 0;  /* Ajustar el padding */
-}
-
-/* Carrusel */
-.carousel-inner img {
-    height: 400px; /* Ajustado para ser más adecuado en dispositivos móviles */
-    object-fit: cover;
-}
-
-/* Estilo del deslizador de texto */
-.slider {
-    margin: 20px 0;
-    padding: 5px;
-    background-color: #f8f9fa;
-    text-align: center;
-    font-size: 1.2rem;
-}
-
-/* Estilos para el footer */
-footer {
-    position: relative;
-    bottom: 0;
-    width: 100%;
-    padding: 10px;
-}
-
-/* Ajustes en la imagen de WhatsApp */
-footer a img {
-    width: 40px;
-}
-
-/* Medias queries para hacer la web responsiva */
-
-@media (max-width: 768px) {
-    header h1 {
-        font-size: 1.8rem; /* Ajustar aún más el tamaño en pantallas más pequeñas */
-    }
-    header h2 {
-        font-size: 1rem; /* Ajustar el tamaño del subtítulo */
-    }
-
-    .carousel-inner img {
-        height: 250px; /* Ajustar el tamaño de las imágenes del carrusel para móviles */
-    }
-
-    .slider {
-        font-size: 1rem; /* Hacer más pequeño el texto del slider */
-    }
-
-    footer a {
-        font-size: 1.2rem; /* Icono de WhatsApp más pequeño */
-    }
-}
-
-/* Para pantallas muy pequeñas (por ejemplo, móviles en vertical) */
-@media (max-width: 480px) {
-    .carousel-inner img {
-        height: 200px; /* Ajustar aún más el tamaño de las imágenes para pantallas pequeñas */
-    }
-
-    footer {
-        padding: 15px; /* Ajuste del padding en el footer */
-    }
-
-    footer a img {
-        width: 35px; /* Icono de WhatsApp aún más pequeño */
-    }
-}
-
-  </style>
-  
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .sticker-section {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin: 10px 0;
+        }
+        .sticker {
+            width: 80px;
+            height: auto;
+        }
+    </style>
 </head>
-<body>
-    <!-- Encabezado -->
-    <header>
-        <h1>Souvenirs & Gift Shop</h1>
-        <h2>Shooping tour - World Mart</h2>
+<body class="bg-gray-100 flex flex-col items-center justify-center min-h-screen relative">
+    
+    <!-- Sección superior con stickers -->
+    <div class="sticker-section">
+        <img src="/IMG_6213.png" class="sticker" alt="Sticker 1">
+        <img src="/IMG_6214.png" class="sticker" alt="Sticker 2">
+    </div>
+    
+    <header class="text-center my-6">
+        <h1 class="text-4xl font-bold text-gray-800">Souvenirs & Gift Shop</h1>
+        <h2 class="text-xl text-gray-600">Shopping tour - World Mart</h2>
     </header>
 
-    <!-- Carrusel de imágenes -->
-    <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-inner">
-            <!-- Imágenes que me pasaste -->
+    <div id="carouselExample" class="carousel slide w-full max-w-2xl" data-bs-ride="carousel">
             <div class="carousel-item active">
-                <img src="https://media-cdn.tripadvisor.com/media/attractions-splice-spp-720x480/11/cc/a6/66.jpg" class="d-block w-100" alt="Imagen 1">
+                <img src="https://media-cdn.tripadvisor.com/media/attractions-splice-spp-720x480/11/cc/de/89.jpg" class="d-block w-100 rounded-lg" alt="Shop Image 1">
             </div>
             <div class="carousel-item">
-                <img src="https://media-cdn.tripadvisor.com/media/attractions-splice-spp-720x480/11/cc/a7/3d.jpg" class="d-block w-100" alt="Imagen 2">
-            </div>
-          <div class="carousel-item">
-                <img src="https://www.pelago.com/img/products/DO-Dominican%20Republic/guided-shopping-tour-to-worldmart-souvenirs-store/159ef68b-7127-4f24-b53f-72e73b872b71_guided-shopping-tour-to-worldmart-souvenirs-store.jpg" class="d-block w-100" alt="Imagen 3">
+                <img src="https://thumbs.dreamstime.com/b/recuerdos-locales-en-punta-cana-rep%C3%BAblica-dominicana-38424946.jpg" class="d-block w-100 rounded-lg" alt="Shop Image 2">
             </div>
             <div class="carousel-item">
-                <img src="https://media-cdn.tripadvisor.com/media/attractions-splice-spp-720x480/11/cc/aa/35.jpg" class="d-block w-100" alt="Imagen 4">
-            </div>
-            <div class="carousel-item">
-                <img src="https://media-cdn.tripadvisor.com/media/attractions-splice-spp-720x480/11/cc/aa/9b.jpg" class="d-block w-100" alt="Imagen 5">
-            </div>
-            <div class="carousel-item">
-                <img src="https://media-cdn.tripadvisor.com/media/attractions-splice-spp-720x480/11/cc/ab/c0.jpg" class="d-block w-100" alt="Imagen 6">
-            </div>
-            <div class="carousel-item">
-                <img src="https://media-cdn.tripadvisor.com/media/attractions-splice-spp-720x480/11/cc/ab/6a.jpg" class="d-block w-100" alt="Imagen 7">
-            </div>
-            <div class="carousel-item">
-                <img src="https://media-cdn.tripadvisor.com/media/attractions-splice-spp-720x480/11/cc/d9/f7.jpg" class="d-block w-100" alt="Imagen 8">
-            </div>
-            <div class="carousel-item">
-                <img src="https://media-cdn.tripadvisor.com/media/attractions-splice-spp-720x480/11/cc/de/89.jpg" class="d-block w-100" alt="Imagen 9">
-            </div>
-            <div class="carousel-item">
-                <img src="https://thumbs.dreamstime.com/b/recuerdos-locales-en-punta-cana-rep%C3%BAblica-dominicana-38424946.jpg" class="d-block w-100" alt="Imagen 10">
-            </div>
-            <div class="carousel-item">
-                <img src="https://cdn.getyourguide.com/img/tour/cc0a4e2f3008f192aa746b95e002d2fdf3f28f89d6b41ea878fe0a9721436469.jpg/61.jpg" class="d-block w-100" alt="Imagen 11">
-            </div>
-            <div class="carousel-item">
-                <img src="https://img.puntacanatours.com/souvenirs.webp" class="d-block w-100" alt="Imagen 12">
-            </div>
-            <div class="carousel-item">
-                <img src="https://previews.123rf.com/images/zhukovsky/zhukovsky1501/zhukovsky150100090/35207159-recuerdos-locales-en-punta-cana-rep%C3%BAblica-dominicana.jpg" class="d-block w-100" alt="Imagen 13">
-            </div>
-            <div class="carousel-item">
-                <img src="https://media.tacdn.com/media/attractions-splice-spp-674x446/14/ca/f6/0b.jpg" class="d-block w-100" alt="Imagen 14">
-            </div>
-            <div class="carousel-item">
-                <img src="https://media.tacdn.com/media/attractions-splice-spp-674x446/14/ca/f5/e2.jpg" class="d-block w-100" alt="Imagen 15">
-            </div>
-            <div class="carousel-item">
-                <img src="https://media-cdn.tripadvisor.com/media/attractions-splice-spp-720x480/11/cc/a7/a7.jpg" class="d-block w-100" alt="Imagen 16">
-            </div>
-            <div class="carousel-item">
-                <img src="https://media.tacdn.com/media/attractions-splice-spp-674x446/14/ca/f6/09.jpg" class="d-block w-100" alt="Imagen 17">
+                <img src="https://cdn.getyourguide.com/img/tour/cc0a4e2f3008f192aa746b95e002d2fdf3f28f89d6b41ea878fe0a9721436469.jpg/61.jpg" class="d-block w-100 rounded-lg" alt="Shop Image 3">
             </div>
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
@@ -178,23 +54,18 @@ footer a img {
             <span class="visually-hidden">Next</span>
         </button>
     </div>
-
-    <!-- Texto deslizante -->
-    <div class="slider">
-        <p>Cigar Factory, Rum Tasting, Coffee Production, Cosmetics, Gift Shop, Jewels, Chocolate Factory</p>
+    
+    <!-- Sección inferior con stickers -->
+    <div class="sticker-section">
+        <img src="/IMG_6211.png" class="sticker" alt="Sticker 1">
+        <img src="/IMG_6212.png" class="sticker" alt="Sticker 2">
     </div>
- 
-    <!-- Footer -->
-    <footer class="bg-dark text-white text-center py-4" style="text-decoration:none;">
-        <p>Free Transportation</p>
-        <a style="text-decoration:none;" href="https://wa.me/18092056364" target="_blank">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" style="width: 40px;">
-          <a style="text-decoration:none; color:#25D366;" href="https://wa.me/18092056364" target="_blank">BOOK +1 809 205 6364</a>
+    
+    <footer class="w-full text-center mt-8 p-4 bg-gray-800 text-white relative z-10">
+        <p class="text-lg font-semibold">Free Transportation</p>
+        <a href="https://wa.me/18092056364" class="flex items-center justify-center mt-2 text-lg font-bold text-white bg-[#25D366] px-4 py-2 rounded-lg shadow-lg">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" class="w-6 h-6 mr-2"> BOOK +1 809 205 6364
         </a>
     </footer>
-
-    <!-- Scripts de Bootstrap -->
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
 </body>
 </html>
