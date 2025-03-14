@@ -107,30 +107,6 @@
     </iframe></div>
 </div>
  </div>
-    <iframe src="https://www.tripadvisor.es/ShowUserReviews-g147293-d25466055-r922146788-Real_Tours_Punta_Cana-Punta_Cana_La_Altagracia_Province_Dominican_Republic.html#REVIEWS" width="600" height="400" id="myIframe"></iframe>
-
-<script>
-  const iframe = document.getElementById('myIframe');
-
-  // Intervalo para verificar si el iframe ha cargado
-  const checkIframeLoad = setInterval(() => {
-    const iframeDocument = iframe.contentWindow.document;
-
-    // Verifica si el iframe está cargado
-    if (iframeDocument.readyState === 'complete') {
-      clearInterval(checkIframeLoad); // Detenemos el intervalo cuando se ha cargado
-
-      const divLbPSX = iframeDocument.querySelector('div.listContainer');
-      if (divLbPSX) {
-        // Aquí puedes manipular el div.LbPSX o hacerlo visible
-        divLbPSX.style.display = 'block';
-
-        // Opcional: oculta otros elementos en el iframe
-        iframeDocument.body.querySelectorAll('div:not(.listContainer)').forEach(el => el.style.display = 'none');
-      }
-    }
-  }, 100); // Revisa cada 100 ms
-</script>
-
+    
 </body>
 </html>
