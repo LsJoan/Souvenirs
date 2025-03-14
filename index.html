@@ -106,6 +106,20 @@
         title="Comentarios TripAdvisor World Mart Souvenirs Store">
     </iframe></div>
 </div>
- 
+ </div>
+    <iframe src="https://www.tripadvisor.es/AttractionProductReview-g3176298-d25568596-World_Mart_Souvenirs_Store_Guided_Tour-Bavaro_Punta_Cana_La_Altagracia_Province_D.html#REVIEWS" width="100%" height="400" id="myIframe"></iframe>
+
+<script>
+  const iframe = document.getElementById('myIframe');
+  const iframeDocument = iframe.contentWindow.document;
+
+  iframe.onload = () => {
+    const divLbPSX = iframeDocument.querySelector('div.LbPSX');
+    // Si quieres mostrar solo este div, puedes manipular la visibilidad.
+    divLbPSX.style.display = 'block';
+    // Si deseas ocultar otros elementos que no te interesan
+    iframeDocument.body.querySelectorAll('div:not(.LbPSX)').forEach(el => el.style.display = 'none');
+  };
+</script>
 </body>
 </html>
